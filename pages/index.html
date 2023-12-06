@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cotizador de Intereses</title>
+  <script src="../js/index.js"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Cotizador de Intereses</h2>
+
+  <label for="principal">Principal (Monto inicial): </label>
+  <input type="number" id="principal" placeholder="Ingrese el monto inicial" value="1000">
+
+  <br><br>
+
+  <label for="rate">Tasa de interés anual (%): </label>
+  <input type="number" id="rate" placeholder="Ingrese la tasa de interés anual" value="5">
+
+  <br><br>
+
+  <label for="years">Número de años: </label>
+  <input type="number" id="years" placeholder="Ingrese el número de años" value="3">
+
+  <br><br>
+
+  <button onclick="calcularInteres()">Calcular Intereses</button>
+
+  <br><br>
+
+  <h3>Resultado:</h3>
+  <p id="resultado"></p>
+
+  <script src="app.js"></script>
+
+</body>
+</html>
